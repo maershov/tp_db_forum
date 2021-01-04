@@ -1,7 +1,5 @@
 -- +migrate Up
 
--- fk user
-
 -- fk forum
 CREATE INDEX IF NOT EXISTS idx_forum__forum_user ON forum (forum_user);
 
